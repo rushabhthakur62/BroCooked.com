@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0;
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+body {
+    background-color: black;
+}
+.header h1 {
+    font-size: 50px;
+}
+.header {
+    height: 70px;
+    width: 100%;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.options {
+    height: 50px;
+    width: 50%;
+    background-color: rgb(59, 56, 56);
+    color: white;
+}
+.options li {
+    list-style: none;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 250px;
+    margin-top: 10px;
+    color: white;
+}
+.header2 {
+    display: flex;
+    gap: 3px;
+}
+img {
+    height: auto;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+.search-container {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+.search-container input[type="search"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #f5f0f0;
+    border-radius: 50px;
+}
+.search-container {
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    font-size: 10px;
+}
+.suggestion-box {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 60%;
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 90px;
+    min-height: 0px;
+    overflow-y: auto;
+    z-index: 1000;
+    border-radius: 10px;
+}
+.suggestion-box li {
+    cursor: pointer;
+    border-bottom: 1px solid #4d4949;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.suggestion-box li:hover {
+    background-color: orangered;
+}
+#typingText{
+    font-size: 60px;
+    color:white;
+    font-weight: 900;
+}
+#introtext{
+    font-size: 70px;
+    font-weight: 900;
+    color:white;
+}
+#introtext2{
+    font-size: 40px;
+    font-weight: 900;
+    color:orangered;
+}
+.animation{
+     position: absolute;
+     top: 150px;
+     left: -20%;
+      
+}
+.main .first {
+    position: absolute;
+    top: 580px;
+    left: -60%;
+    list-style: none;
+    color: white;
+    font-size: 25px;
+    /* margin: 10px; */
+}
+.main .second {
+    position: absolute;
+    top: 580px;
+    left: -15%;
+    list-style: none;
+    color: white;
+    font-size: 25px;
+    /* margin: 10px; */
+}
+.main .third {
+    position: absolute;
+    top: 580px;
+    left: 30%;
+    list-style: none;
+    color: white;
+    font-size: 25px;
+    /* margin: 10px; */
+}
+.main .fourth {
+    position: absolute;
+    top: 580px ;
+    left: 85%;
+    list-style: none;
+    color: white;
+    font-size: 25px;
+    
+}
+.main a {
+    color: white;
+}
+.footer {
+    height: 150px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    list-style: none;
+    position: relative;
+    top: 500px;
+    font-size: 50px;
+    color: orangered;
+
+}
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    * {
+        font-size: 16px;
+    }
+    .header {
+        font-size: 20px;
+        height: auto;
+    }
+    .header h1 {
+        font-size: 30px;
+    }
+    .search-container {
+        top: 20%;
+        left: 50%;
+        width: 80%;
+    }
+    .search-container input[type="search"] {
+        width: 100%;
+        font-size: 16px;
+    }
+    .animation {
+        position: relative;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .main .first, .main .second, .main .third, .main .fourth {
+        position: static;
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .footer {
+        position: static;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}
