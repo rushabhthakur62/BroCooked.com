@@ -71,7 +71,6 @@ document.addEventListener('DOMContentLoaded', function () {
         { name: "Classic Cold Coffee", url: "recipe28.html" },
         { name: "Strawberry Banana Smoothi", url: "recipe29.html" },
         { name: "Mango Lassi", url: "recipe30.html" },
-        { name: "Fried Rice", url: "recipe31.html" },
 
         // { name: "Fish Curry", url: "recipe5.html.html" }
         // Add more suggestions as needed
